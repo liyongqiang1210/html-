@@ -1,0 +1,19 @@
+.toolbar {
+	height: 50px;
+	padding: 10px 10px 0px 10px;
+	margin: 0px 10px 0px 10px;
+}
+
+
+/*表格工具栏span标签title样式*/
+
+.toolbar-span-title {
+	display: inline-block;
+	width: auto;
+	height: 34px;
+	margin-right: 10px;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #555;
+	background-color: #fff;
+}
