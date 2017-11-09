@@ -24,7 +24,7 @@
 				ulDom = '',
 				jumpDom = '',
 				content = '',
-				liWidth = 60, // li的宽度
+				liWidth = 50, // li的宽度
 				totalPages = that.options.totalPages, // 总页数
 				wrapLength = 0;
 			totalPages > 5 ? wrapLength = 5 * liWidth : wrapLength = totalPages * liWidth;

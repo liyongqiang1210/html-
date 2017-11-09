@@ -3,23 +3,12 @@
 
 	<head>
 		<meta charset="UTF-8">
-		<title></title>
+		<title>全选与反选</title>
+		<!--此处引入的css与js需要更换成你本地的地址-->
 		<link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css" />
-		<script type="text/javascript" src="../../jquery-2.0.0/jquery.min.js"></script>
-		<script>
-			$(document).ready(function() {
-				/*全选与反选*/
-				$("#all").click(function() {
-					var state = $("#all").prop("checked");
-					if(state == true) {
-						$("[name='option']").prop("checked", "checked");
-					} else {
-						$("[name='option']").prop("checked", "");
-					}
-
-				});
-			});
-		</script>
+		<link rel="stylesheet" href="../../css/style.css" />
+		<script src="../../jquery-2.0.0/jquery.min.js"></script>
+		<script src="../../js/table.js"></script>
 	</head>
 
 	<body>
@@ -81,37 +70,113 @@
 								<button type="button" class="btn btn-danger btn-xs">删除</button>
 							</td>
 						</tr>
+						<tr>
+							<td><input type="checkbox" name="option"></td>
+							<td>Bangalore</td>
+							<td>560001</td>
+							<td>Bangalore</td>
+							<td>560001</td>
+							<td>
+								<button type="button" class="btn btn-info btn-xs">编辑</button>
+								<button type="button" class="btn btn-danger btn-xs">删除</button>
+							</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="option"></td>
+							<td>Bangalore</td>
+							<td>560001</td>
+							<td>Bangalore</td>
+							<td>560001</td>
+							<td>
+								<button type="button" class="btn btn-info btn-xs">编辑</button>
+								<button type="button" class="btn btn-danger btn-xs">删除</button>
+							</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="option"></td>
+							<td>Bangalore</td>
+							<td>560001</td>
+							<td>Bangalore</td>
+							<td>560001</td>
+							<td>
+								<button type="button" class="btn btn-info btn-xs">编辑</button>
+								<button type="button" class="btn btn-danger btn-xs">删除</button>
+							</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="option"></td>
+							<td>Bangalore</td>
+							<td>560001</td>
+							<td>Bangalore</td>
+							<td>560001</td>
+							<td>
+								<button type="button" class="btn btn-info btn-xs">编辑</button>
+								<button type="button" class="btn btn-danger btn-xs">删除</button>
+							</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="option"></td>
+							<td>Bangalore</td>
+							<td>560001</td>
+							<td>Bangalore</td>
+							<td>560001</td>
+							<td>
+								<button type="button" class="btn btn-info btn-xs">编辑</button>
+								<button type="button" class="btn btn-danger btn-xs">删除</button>
+							</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="option"></td>
+							<td>Bangalore</td>
+							<td>560001</td>
+							<td>Bangalore</td>
+							<td>560001</td>
+							<td>
+								<button type="button" class="btn btn-info btn-xs">编辑</button>
+								<button type="button" class="btn btn-danger btn-xs">删除</button>
+							</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="option"></td>
+							<td>Bangalore</td>
+							<td>560001</td>
+							<td>Bangalore</td>
+							<td>560001</td>
+							<td>
+								<button type="button" class="btn btn-info btn-xs">编辑</button>
+								<button type="button" class="btn btn-danger btn-xs">删除</button>
+							</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="option"></td>
+							<td>Bangalore</td>
+							<td>560001</td>
+							<td>Bangalore</td>
+							<td>560001</td>
+							<td>
+								<button type="button" class="btn btn-info btn-xs">编辑</button>
+								<button type="button" class="btn btn-danger btn-xs">删除</button>
+							</td>
+						</tr>
 					</tbody>
 				</table>
-				<nav aria-label="Page navigation" class="pull-right">
-					<ul class="pagination">
-						<li>
-							<a href="#" aria-label="Previous">
-								<span aria-hidden="true">&laquo;</span>
-							</a>
-						</li>
-						<li>
-							<a href="#">1</a>
-						</li>
-						<li>
-							<a href="#">2</a>
-						</li>
-						<li>
-							<a href="#">3</a>
-						</li>
-						<li>
-							<a href="#">4</a>
-						</li>
-						<li>
-							<a href="#">5</a>
-						</li>
-						<li>
-							<a href="#" aria-label="Next">
-								<span aria-hidden="true">&raquo;</span>
-							</a>
-						</li>
-					</ul>
-				</nav>
+				<div class="paging">
+					<button type="button" class="btn btn-default paging-btn">首页</button>
+					<button type="button" class="btn btn-default paging-btn">上一页</button>
+					<div class="paging-pages">
+						<button type="button" class="btn btn-default paging-pages-btn">1</button>
+						<button type="button" class="btn btn-default paging-pages-btn">2</button>
+						<button type="button" class="btn btn-default paging-pages-btn">3</button>
+						<button type="button" class="btn btn-default paging-pages-btn">4</button>
+						<button type="button" class="btn btn-default paging-pages-btn">5</button>
+					</div>
+					<button type="button" class="btn btn-default paging-btn">下一页</button>
+					<button type="button" class="btn btn-default paging-btn">尾页</button>
+					<input type="text" class="paging-input" />
+					<button type="button" class="btn btn-default paging-btn">跳转</button>
+					<p class="paging-p">共30页</p>
+					<p class="paging-p">合计1000条数据</p>
+				</div>
 			</div>
 		</div>
 
