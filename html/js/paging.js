@@ -1,4 +1,4 @@
-(function($, window, document) {
+/*(function($, window, document) {
 	// 定义构造函数
 	function Paging(el, options) {
 		this.el = el;
@@ -123,4 +123,12 @@
 	$.fn.paging = function(options) {
 		return new Paging($(this), options);
 	}
-})(jQuery, window, document);
+})(jQuery, window, document);*/
+/**
+ * totalPages 总页数
+ * dataTotalCount 数据总数
+ * 
+ * */
+function paging(var totalPages,var dataTotalCount){
+	
+}
