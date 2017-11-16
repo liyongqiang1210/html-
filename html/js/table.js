@@ -1,4 +1,7 @@
 	$(document).ready(function() {
+		$('#myModal').on('shown.bs.modal', function() {
+			$('#myModal').focus();
+		})
 		/*全选与反选按钮*/
 		$("#all").click(function() {
 			var state = $("#all").prop("checked");
