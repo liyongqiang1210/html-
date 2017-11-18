@@ -26,5 +26,12 @@
 				$("#all").prop("checked", "");
 			}
 		});
+		
+		/*为每个按钮绑定点击事件*/
+		$("button[name='edit']").bind("click",function(){
+			/*获取当前行某一列的数据*/
+			var text = $(this).parents("tr").find("td:eq(1)");
+			alert(text.text());
+		});
 
 	});
